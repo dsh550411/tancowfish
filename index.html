@@ -2,30 +2,107 @@
 
 <head>
 
-  <meta charset="UTF-8">
   <title>蛞蝓ㄉ介紹</title>
-  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #cadff3;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #57698b;
+    }
+
+    .logo {
+      color: #fff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      gap: 30px;
+    }
+
+    .hero img {
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    .hero-text h2 {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero img {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav ul {
+        margin-top: 10px;
+      }
+
+      .hero-text h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <nav>
+    <h1 class="logo">蛞蝓ㄉ作品集</h1>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="works.html">作品集</a></li>
+      <li><a href="about.html">關於我</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <h1 class="logo">蛞蝓ㄉ作品集</h1>
-  <ul>
-    <li><a href="index.html">首頁</a></li>
-    <li><a href="works.html">作品集</a></li>
-    <li><a href="about.html">關於我</a></li>
-  </ul>
-</nav>
-
-<header class="hero">
-  <img src="index01.gif" alt="代表圖片">
-  <div class="hero-text">
-    <h2>你好我是蛞蝓</h2>
-    <p>正在被小專和期末摧殘的大三生</p>
-    <p>但還是會用愛發電畫家產</p>
-  </div>
-</header>
-
+  <header class="hero">
+    <img src="index01.gif" alt="代表圖片">
+    <div class="hero-text">
+      <h2>你好我是蛞蝓</h2>
+      <p>正在被小專和期末摧殘的大三生</p>
+      <p>但還是會用愛發電畫家產</p>
+    </div>
+  </header>
 </body>
 </html>

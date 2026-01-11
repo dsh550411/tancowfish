@@ -2,51 +2,122 @@
 
 <head>
 
-  <meta charset="UTF-8">
   <title>蛞蝓ㄉ作品</title>
-  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #cadff3;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #57698b;
+    }
+
+    .logo {
+      color: #fff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .works {
+      padding: 40px;
+    }
+
+    .work-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .work-item {
+      background: #ffffff;
+      padding: 20px;
+      width: calc(50% - 20px);
+      border-radius: 10px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .work-item {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav ul {
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <nav>
+    <h1 class="logo">蛞蝓ㄉ作品集</h1>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="works.html">作品集</a></li>
+      <li><a href="about.html">關於我</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <h1 class="logo">蛞蝓ㄉ作品集</h1>
-  <ul>
-    <li><a href="index.html">首頁</a></li>
-    <li><a href="works.html">作品集</a></li>
-    <li><a href="about.html">關於我</a></li>
-  </ul>
-</nav>
+  <main class="works">
+    <h2>作品集</h2>
 
-<main class="works">
-  <h2>作品集</h2>
+    <div class="work-list">
+      <div class="work-item">
+        <img src="work01.jpg" alt="作品1">
+        <h3>GR63</h3>
+        <p>Toto終於給合約了</p>
+      </div>
 
-  <div class="work-list">
-    <div class="work-item">
-     <img src="work01.jpg" alt="作品1">
-     <h3>GR63</h3>
-     <p>Toto終於給合約了</p>
+      <div class="work-item">
+        <img src="work02.jpg" alt="作品2">
+        <h3>Soap</h3>
+        <p>海豹皂</p>
+      </div>
+
+      <div class="work-item">
+        <img src="work03.jpg" alt="作品3">
+        <h3>Ghoap01</h3>
+        <p>cod19之後都很爛</p>
+      </div>
+
+      <div class="work-item">
+        <img src="work04.jpg" alt="作品4">
+        <h3>Ghoap02</h3>
+        <p>玩舊版三部曲就好</p>
+      </div>
     </div>
-
-    <div class="work-item">
-      <img src="work02.jpg" alt="作品2">
-      <h3>Soap</h3>
-      <p>海豹皂</p>
-    </div>
-
-    <div class="work-item">
-      <img src="work03.jpg" alt="作品3">
-      <h3>Ghoap01</h3>
-      <p>cod19之後都很爛</p>
-    </div>
-
-    <div class="work-item">
-      <img src="work04.jpg" alt="作品4">
-      <h3>Ghoap02</h3>
-      <p>玩舊版三部曲就好</p>
-    </div>
-  </div>
-</main>
-
+  </main>
 </body>
 </html>
+
